@@ -1,0 +1,125 @@
+@import 'reset';
+@import 'utils';
+
+html
+{
+	font-family: Raleway, sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.block-area
+{
+	color: #fff;
+
+}
+
+.block-heading-container
+{
+	background: rgba(0, 0, 0, .2);
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.block-content-container
+{
+	padding: 1rem 0;
+}
+
+.about-area
+{
+	background: #1ABC9C;
+}
+
+.projects-area
+{
+	background: pink;
+}
+
+.contact-area
+{
+	background: #1ABC9C;
+	text-align: center;
+}
+
+//
+
+.about-container
+{
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: center;
+
+}
+
+.about-container-item
+{
+	// flex-grow: 0;
+	display: flex;
+	justify-content: center;
+	// margin: 0 auto;
+}
+
+.about-container-item:not(:first-child)
+{
+	// margin-top: 2rem;
+}
+
+//
+
+.photo-container
+{
+
+}
+
+.photo
+{
+	background: #fff;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+//
+
+.introduction-container
+{
+	margin-top: 2rem;
+}
+
+//
+
+.social-icons-container
+{
+
+}
+
+.social-icon-list
+{
+	display: flex;
+}
+
+.social-icon-item
+{
+
+}
+
+.social-icon-link
+{
+
+}
+
+.social-icon
+{
+	color: rgba(255, 255, 255, .9);
+	font-size: 5rem;
+	margin: 1rem;
+}
+
+.social-icon:hover
+{
+	color: #fff;
+}
