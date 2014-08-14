@@ -1,6 +1,9 @@
 @import 'reset';
 @import 'utils';
 
+$color-turq-1: #00B1AA;
+$color-pink-1: #F09FAE;
+
 html
 {
 	font-family: Raleway, sans-serif;
@@ -8,41 +11,49 @@ html
 	line-height: 1.5;
 }
 
+@import 'main-panel';
+
 .block-area
 {
 	color: #fff;
-
+	padding: 1rem 0;
 }
 
 .block-heading-container
 {
-	background: rgba(0, 0, 0, .2);
+	// background: rgba(0, 0, 0, .2);
 	font-size: 2rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 1rem 0;
+	// padding: 1rem 0;
 }
 
 .block-content-container
 {
-	padding: 1rem 0;
+	// padding: 1rem 0;
+	margin-top: 2rem;
 }
+
+//
 
 .about-area
 {
-	background: #1ABC9C;
+	background: $color-turq-1;
+	padding-top: 2rem;
 }
 
 .projects-area
 {
-	background: pink;
+	background: $color-pink-1;
+	padding-bottom: 2rem;
 }
 
 .contact-area
 {
-	background: #1ABC9C;
+	background: $color-turq-1;
 	text-align: center;
+	padding-bottom: 5rem;
 }
 
 //
@@ -123,3 +134,36 @@ html
 {
 	color: #fff;
 }
+
+//
+
+.project-list
+{
+
+}
+
+.project-list-item
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center
+}
+
+.project-container
+{
+
+}
+
+//
+
+.contact-email
+{
+	font-weight: bold;
+}
+
+.contact-content
+{
+
+}
+
+@import 'project-card';

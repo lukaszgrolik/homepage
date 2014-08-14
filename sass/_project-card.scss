@@ -1,0 +1,43 @@
+.project-card
+{
+	// background: #fff;
+	color: #fff;
+	line-height: 1;
+	text-align: center;
+	border-radius: .33rem;
+	// padding: 1rem;
+	overflow: hidden;
+	max-width: 20rem;
+	position: relative;
+}
+
+.project-card-image-container
+{
+	img {
+		max-width: 100%;
+	}
+}
+
+.project-card-info
+{
+	background: rgba(0, 0, 0, .75);
+	padding: .75rem 0 .5rem;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.project-card-name-container
+{
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.project-card-url-container
+{
+	color: rgba(255, 255, 255, .75);
+	font-size: .8rem;
+	margin-top: .5rem;
+}

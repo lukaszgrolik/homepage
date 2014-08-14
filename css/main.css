@@ -100,29 +100,52 @@ html {
   font-size: 20px;
   line-height: 1.5; }
 
+.main-panel {
+  background: #fff;
+  line-height: 1;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0; }
+
+.main-menu {
+  font-weight: 300; }
+
+.main-menu-link-list {
+  display: flex; }
+
+.main-menu-link {
+  padding: 0.5rem 1rem;
+  display: block; }
+  .main-menu-link:hover {
+    text-decoration: underline; }
+
 .block-area {
-  color: #fff; }
+  color: #fff;
+  padding: 1rem 0; }
 
 .block-heading-container {
-  background: rgba(0, 0, 0, 0.2);
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
-  padding: 1rem 0; }
+  text-align: center; }
 
 .block-content-container {
-  padding: 1rem 0; }
+  margin-top: 2rem; }
 
 .about-area {
-  background: #1ABC9C; }
+  background: #00B1AA;
+  padding-top: 2rem; }
 
 .projects-area {
-  background: pink; }
+  background: #F09FAE;
+  padding-bottom: 2rem; }
 
 .contact-area {
-  background: #1ABC9C;
-  text-align: center; }
+  background: #00B1AA;
+  text-align: center;
+  padding-bottom: 5rem; }
 
 .about-container-item {
   display: flex;
@@ -147,3 +170,41 @@ html {
 
 .social-icon:hover {
   color: #fff; }
+
+.project-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.contact-email {
+  font-weight: bold; }
+
+.project-card {
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+  border-radius: 0.33rem;
+  overflow: hidden;
+  max-width: 20rem;
+  position: relative; }
+
+.project-card-image-container img {
+  max-width: 100%; }
+
+.project-card-info {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0.75rem 0 0.5rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.project-card-name-container {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.project-card-url-container {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8rem;
+  margin-top: 0.5rem; }

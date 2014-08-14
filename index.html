@@ -11,6 +11,27 @@
 	<title>Łukasz Grolik</title>
 </head>
 <body>
+	<div class="main-panel">
+		<div class="ca ca-1">
+			<div class="main-menu">
+				<nav>
+					<ul class="main-menu-link-list">
+						<li class="main-menu-link-list-item">
+							<a href="#" class="main-menu-link">About me</a>
+						</li>
+
+						<li class="main-menu-link-list-item">
+							<a href="#projects" class="main-menu-link">My projects</a>
+						</li>
+
+						<li class="main-menu-link-list-item">
+							<a href="#contact" class="main-menu-link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
 
 	<div class="block-area about-area">
 		<div class="block-content-container">
@@ -27,17 +48,17 @@
 					<div class="about-container-item social-icons-container">
 						<ul class="social-icon-list">
 							<li class="social-icon-item">
-								<a href="#" class="social-icon-link">
+								<a href="https://github.com/lukaszgrolik" class="social-icon-link">
 									<span class="social-icon fa fa-github"></span>
 								</a>
 							</li>
 							<li class="social-icon-item">
-								<a href="#" class="social-icon-link">
+								<a href="https://twitter.com/lukaszgrolik" class="social-icon-link">
 									<span class="social-icon fa fa-twitter"></span>
 								</a>
 							</li>
 							<li class="social-icon-item">
-								<a href="#" class="social-icon-link">
+								<a href="https://www.gittip.com/lukaszgrolik/" class="social-icon-link">
 									<span class="social-icon fa fa-gittip"></span>
 								</a>
 							</li>
@@ -48,7 +69,7 @@
 		</div>
 	</div>
 
-	<div class="block-area projects-area">
+	<div id="projects" class="block-area projects-area">
 		<section>
 			<div class="block-heading-container">
 				<div class="ca ca-1">
@@ -58,13 +79,29 @@
 
 			<div class="block-content-container">
 				<div class="ca ca-1">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis libero repudiandae eius alias molestias dolor dolorem, asperiores, hic, ut autem quas distinctio optio, voluptates accusantium aspernatur deleniti quod recusandae.</p>
+					<ul class="project-list">
+						<li class="project-list-item">
+							<div class="project-container project-card">
+								<div class="project-card-image-container">
+									<img src="images/3.png" alt="">
+								</div>
+								<div class="project-card-info">
+									<div class="project-card-name-container">
+										<span>GitHub Repos Stats</span>
+									</div>
+									<div class="project-card-url-container">
+										<a href="http://lukaszgrolik.github.io/repos-stats">lukaszgrolik.github.io/repos-stats</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
 	</div>
 
-	<div class="block-area contact-area">
+	<div id="contact" class="block-area contact-area">
 		<section>
 			<div class="block-heading-container">
 				<div class="ca ca-1">
@@ -74,7 +111,9 @@
 
 			<div class="block-content-container">
 				<div class="ca ca-1">
-					<p>Email me: lukasz@grolik.pl</p>
+					<div class="contact-content">
+						<p>Email me: <span class="contact-email">lukasz@grolik.pl</span></p>
+					</div>
 				</div>
 			</div>
 		</section>
