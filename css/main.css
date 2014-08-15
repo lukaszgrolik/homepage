@@ -171,6 +171,7 @@ html {
   border-radius: 50%; }
 
 .introduction-container {
+  font-size: 1.5rem;
   margin-top: 2rem; }
 
 .social-icon-list {
@@ -211,6 +212,9 @@ html {
   border-radius: 0.33rem;
   overflow: hidden;
   max-width: 20rem; }
+
+.project-card-link {
+  display: block; }
 
 .project-card-image-container img {
   max-width: 100%; }
