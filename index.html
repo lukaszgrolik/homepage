@@ -13,118 +13,130 @@
 	<title>Łukasz Grolik</title>
 </head>
 <body>
-	<div class="main-panel">
+
+<div class="main-panel">
+	<div class="ca ca-1">
+		<div class="main-menu">
+			<nav>
+				<ul class="main-menu-link-list">
+					<li class="main-menu-link-list-item">
+						<a href="#" class="main-menu-link">About me</a>
+					</li>
+
+					<li class="main-menu-link-list-item">
+						<a href="#projects" class="main-menu-link">My projects</a>
+					</li>
+
+					<li class="main-menu-link-list-item">
+						<a href="#contact" class="main-menu-link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="block-area about-area">
+	<div class="block-content-container">
 		<div class="ca ca-1">
-			<div class="main-menu">
-				<nav>
-					<ul class="main-menu-link-list">
-						<li class="main-menu-link-list-item">
-							<a href="#" class="main-menu-link">About me</a>
-						</li>
+			<div class="about-container">
+				<div class="about-container-item photo-container">
+					<!-- <div class="photo"></div> -->
+					<img src="images/photo-1.png" alt="My photo" class="photo">
+				</div>
 
-						<li class="main-menu-link-list-item">
-							<a href="#projects" class="main-menu-link">My projects</a>
-						</li>
+				<div class="about-container-item introduction-container">
+					<p>Hello! I'm <span style="font-weight: bold">Łukasz</span> and I make <span style="font-style: italic; letter-spacing: 5px">things</span>.</p>
+				</div>
 
-						<li class="main-menu-link-list-item">
-							<a href="#contact" class="main-menu-link">Contact</a>
+				<div class="about-container-item social-icons-container">
+					<ul class="social-icon-list">
+						<li class="social-icon-item">
+							<a href="https://github.com/lukaszgrolik" class="social-icon-link">
+								<span class="social-icon fa fa-github"></span>
+							</a>
+						</li>
+						<li class="social-icon-item">
+							<a href="https://twitter.com/lukaszgrolik" class="social-icon-link">
+								<span class="social-icon fa fa-twitter"></span>
+							</a>
+						</li>
+						<li class="social-icon-item">
+							<a href="https://www.gittip.com/lukaszgrolik/" class="social-icon-link">
+								<span class="social-icon fa fa-gittip"></span>
+							</a>
 						</li>
 					</ul>
-				</nav>
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
-	<div class="block-area about-area">
+<div id="projects" class="block-area projects-area">
+	<section>
+		<div class="block-heading-container">
+			<div class="ca ca-1">
+				<h1>My projects</h1>
+			</div>
+		</div>
+
 		<div class="block-content-container">
 			<div class="ca ca-1">
-				<div class="about-container">
-					<div class="about-container-item photo-container">
-						<!-- <div class="photo"></div> -->
-						<img src="images/photo-1.png" alt="My photo" class="photo">
-					</div>
+				<ul class="project-list">
+					<li class="project-list-item">
+						<div class="project-container project-card">
+							<section>
+								<a href="http://lukaszgrolik.github.io/repos-stats" class="project-card-link">
+									<div class="project-card-image-container">
+										<img src="images/github-repos-stats-1.png" alt="GitHub Repos Stats">
+									</div>
+									<div class="project-card-info">
+										<div class="project-card-name-container">
+											<h1>GitHub Repos Stats</h1>
+										</div>
+										<div class="project-card-url-container">
+											<span class="project-card-url">lukaszgrolik.github.io/repos-stats</span>
+										</div>
+									</div>
+								</a>
+							</section>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</div>
 
-					<div class="about-container-item introduction-container">
-						<p>Hello! I'm <span style="font-weight: bold">Łukasz</span> and I make <span style="font-style: italic; letter-spacing: 5px">things</span>.</p>
-					</div>
+<div id="contact" class="block-area contact-area">
+	<section>
+		<div class="block-heading-container">
+			<div class="ca ca-1">
+				<h1>Contact</h1>
+			</div>
+		</div>
 
-					<div class="about-container-item social-icons-container">
-						<ul class="social-icon-list">
-							<li class="social-icon-item">
-								<a href="https://github.com/lukaszgrolik" class="social-icon-link">
-									<span class="social-icon fa fa-github"></span>
-								</a>
-							</li>
-							<li class="social-icon-item">
-								<a href="https://twitter.com/lukaszgrolik" class="social-icon-link">
-									<span class="social-icon fa fa-twitter"></span>
-								</a>
-							</li>
-							<li class="social-icon-item">
-								<a href="https://www.gittip.com/lukaszgrolik/" class="social-icon-link">
-									<span class="social-icon fa fa-gittip"></span>
-								</a>
-							</li>
-						</ul>
-					</div>
+		<div class="block-content-container">
+			<div class="ca ca-1">
+				<div class="contact-content">
+					<p>Email me: <span class="contact-email">lukasz (at) grolik.pl</span></p>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+</div>
 
-	<div id="projects" class="block-area projects-area">
-		<section>
-			<div class="block-heading-container">
-				<div class="ca ca-1">
-					<h1>My projects</h1>
-				</div>
-			</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			<div class="block-content-container">
-				<div class="ca ca-1">
-					<ul class="project-list">
-						<li class="project-list-item">
-							<div class="project-container project-card">
-								<section>
-									<a href="http://lukaszgrolik.github.io/repos-stats" class="project-card-link">
-										<div class="project-card-image-container">
-											<img src="images/github-repos-stats-1.png" alt="GitHub Repos Stats">
-										</div>
-										<div class="project-card-info">
-											<div class="project-card-name-container">
-												<h1>GitHub Repos Stats</h1>
-											</div>
-											<div class="project-card-url-container">
-												<span class="project-card-url">lukaszgrolik.github.io/repos-stats</span>
-											</div>
-										</div>
-									</a>
-								</section>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-	</div>
+  ga('create', 'UA-53853356-1', 'auto');
+  ga('send', 'pageview');
 
-	<div id="contact" class="block-area contact-area">
-		<section>
-			<div class="block-heading-container">
-				<div class="ca ca-1">
-					<h1>Contact</h1>
-				</div>
-			</div>
-
-			<div class="block-content-container">
-				<div class="ca ca-1">
-					<div class="contact-content">
-						<p>Email me: <span class="contact-email">lukasz (at) grolik.pl</span></p>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+</script>
 
 </body>
 </html>
