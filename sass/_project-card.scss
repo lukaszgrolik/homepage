@@ -1,5 +1,6 @@
 .project-card
 {
+	cursor: pointer;
 	// background: #fff;
 	color: #fff;
 	line-height: 1;
@@ -8,24 +9,25 @@
 	// padding: 1rem;
 	overflow: hidden;
 	max-width: 20rem;
-	position: relative;
+	// position: relative;
 }
 
 .project-card-image-container
 {
-	img {
+	img
+	{
 		max-width: 100%;
 	}
 }
 
 .project-card-info
 {
-	background: rgba(0, 0, 0, .75);
+	background: rgba(0, 0, 0, .25);
 	padding: .75rem 0 .5rem;
 	width: 100%;
-	position: absolute;
-	left: 0;
-	bottom: 0;
+	// position: absolute;
+	// left: 0;
+	// bottom: 0;
 }
 
 .project-card-name-container
@@ -41,3 +43,12 @@
 	font-size: .8rem;
 	margin-top: .5rem;
 }
+
+.project-card-url-link
+{
+	.project-card:hover &
+	{
+		text-decoration: underline;
+	}
+}
+
