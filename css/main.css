@@ -234,5 +234,5 @@ html {
   font-size: 0.8rem;
   margin-top: 0.5rem; }
 
-.project-card:hover .project-card-url-link {
+.project-card:hover .project-card-url {
   text-decoration: underline; }
