@@ -98,7 +98,7 @@ textarea {
   max-width: 1200px; }
 
 html {
-  font-family: Raleway, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   line-height: 1.5; }
 
@@ -134,6 +134,7 @@ html {
   padding: 1rem 0; }
 
 .block-heading-container {
+  font-family: Raleway, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -143,17 +144,17 @@ html {
   margin-top: 2rem; }
 
 .about-area {
-  background: #00B1AA;
+  background: #40bfbf;
   padding-top: 2rem; }
 
 .projects-area {
-  background: #F09FAE;
+  background: #fff;
+  color: #808080;
   padding-bottom: 2rem; }
 
 .contact-area {
-  background: #00B1AA;
-  text-align: center;
-  padding-bottom: 5rem; }
+  background: #40bfbf;
+  text-align: center; }
 
 .about-container-item {
   display: -webkit-box;
@@ -181,6 +182,8 @@ html {
   display: flex; }
 
 .social-icon {
+  -webkit-transition: color 0.4s;
+          transition: color 0.4s;
   color: rgba(255, 255, 255, 0.9);
   font-size: 5rem;
   margin: 1rem; }
@@ -220,7 +223,7 @@ html {
   max-width: 100%; }
 
 .project-card-info {
-  background: rgba(0, 0, 0, 0.25);
+  background: #808080;
   padding: 0.75rem 0 0.5rem;
   width: 100%; }
 
@@ -230,7 +233,6 @@ html {
   text-transform: uppercase; }
 
 .project-card-url-container {
-  color: rgba(255, 255, 255, 0.75);
   font-size: 0.8rem;
   margin-top: 0.5rem; }
 

@@ -24,7 +24,8 @@
 
 .project-card-info
 {
-	background: rgba(0, 0, 0, .25);
+	// background: rgba(0, 0, 0, .25);
+	background: $color-grey-1;
 	padding: .75rem 0 .5rem;
 	width: 100%;
 }
@@ -38,7 +39,7 @@
 
 .project-card-url-container
 {
-	color: rgba(255, 255, 255, .75);
+	// color: rgba(255, 255, 255, .75);
 	font-size: .8rem;
 	margin-top: .5rem;
 }

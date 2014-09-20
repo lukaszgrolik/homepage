@@ -1,12 +1,14 @@
 @import 'reset';
 @import 'utils';
 
-$color-turq-1: #00B1AA;
+// $color-turq-1: #00B1AA;
+$color-turq-1: hsl(180, 50%, 50%);
 $color-pink-1: #F09FAE;
+$color-grey-1: hsl(0, 0%, 50%);
 
 html
 {
-	font-family: Raleway, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
 	line-height: 1.5;
 }
@@ -22,6 +24,7 @@ html
 .block-heading-container
 {
 	// background: rgba(0, 0, 0, .2);
+	font-family: Raleway, sans-serif;
 	font-size: 2rem;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -45,7 +48,9 @@ html
 
 .projects-area
 {
-	background: $color-pink-1;
+	// background: $color-grey-1;
+	background: #fff;
+	color: $color-grey-1;
 	padding-bottom: 2rem;
 }
 
@@ -53,7 +58,7 @@ html
 {
 	background: $color-turq-1;
 	text-align: center;
-	padding-bottom: 5rem;
+	// padding-bottom: 5rem;
 }
 
 //
@@ -125,6 +130,7 @@ html
 
 .social-icon
 {
+	transition: color .4s;
 	color: rgba(255, 255, 255, .9);
 	font-size: 5rem;
 	margin: 1rem;
