@@ -43,7 +43,7 @@ html
 .about-area
 {
 	background: $color-turq-1;
-	padding-top: 2rem;
+	padding-top: 4rem;
 }
 
 .projects-area
@@ -52,13 +52,6 @@ html
 	background: #fff;
 	color: $color-grey-1;
 	padding-bottom: 2rem;
-}
-
-.contact-area
-{
-	background: $color-turq-1;
-	text-align: center;
-	// padding-bottom: 5rem;
 }
 
 //
@@ -95,15 +88,14 @@ html
 {
 	width: 15rem;
 	height: 15rem;
-	// border-radius: 50%;
 }
 
 //
 
 .introduction-container
 {
-	font-size: 1.5rem;
-	margin-top: 2rem;
+	font-size: 2rem;
+	margin: 3rem 0 1rem;
 }
 
 //
@@ -116,6 +108,7 @@ html
 .social-icon-list
 {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .social-icon-item
@@ -130,7 +123,7 @@ html
 
 .social-icon
 {
-	transition: color .4s;
+	// transition: color .4s;
 	color: rgba(255, 255, 255, .9);
 	font-size: 5rem;
 	margin: 1rem;
@@ -156,18 +149,6 @@ html
 }
 
 .project-container
-{
-
-}
-
-//
-
-.contact-email
-{
-	font-weight: bold;
-}
-
-.contact-content
 {
 
 }

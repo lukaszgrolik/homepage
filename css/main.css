@@ -145,16 +145,12 @@ html {
 
 .about-area {
   background: #40bfbf;
-  padding-top: 2rem; }
+  padding-top: 4rem; }
 
 .projects-area {
   background: #fff;
   color: #808080;
   padding-bottom: 2rem; }
-
-.contact-area {
-  background: #40bfbf;
-  text-align: center; }
 
 .about-container-item {
   display: -webkit-box;
@@ -171,18 +167,19 @@ html {
   height: 15rem; }
 
 .introduction-container {
-  font-size: 1.5rem;
-  margin-top: 2rem; }
+  font-size: 2rem;
+  margin: 3rem 0 1rem; }
 
 .social-icon-list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .social-icon {
-  -webkit-transition: color 0.4s;
-          transition: color 0.4s;
   color: rgba(255, 255, 255, 0.9);
   font-size: 5rem;
   margin: 1rem; }
@@ -202,9 +199,6 @@ html {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
-
-.contact-email {
-  font-weight: bold; }
 
 .project-card {
   cursor: pointer;
