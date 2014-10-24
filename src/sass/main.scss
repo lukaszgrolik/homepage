@@ -2,8 +2,11 @@
 @import 'utils';
 
 // $color-turq-1: #00B1AA;
+$color-blue-1: hsl(240, 50%, 50%);
+$color-green-1: hsl(120, 50%, 50%);
 $color-turq-1: hsl(180, 50%, 50%);
-$color-pink-1: #F09FAE;
+// $color-pink-1: #F09FAE;
+$color-pink-1: hsl(300, 50%, 50%);
 $color-grey-1: hsl(0, 0%, 50%);
 
 html
@@ -18,7 +21,7 @@ html
 .block-area
 {
 	color: #fff;
-	padding: 1rem 0;
+	padding: 2rem 0;
 }
 
 .block-heading-container
@@ -42,7 +45,10 @@ html
 
 .about-area
 {
-	background: $color-turq-1;
+	// background: $color-turq-1;
+	// background-image: linear-gradient(to bottom right , hsl(0, 100%, 50%), hsl(240, 50%, 50%));
+	background-image: linear-gradient(to bottom right , hsl(180, 100%, 50%), hsl(240, 25%, 50%));
+	// background-image: linear-gradient(to bottom right, yellowgreen, dodgerblue);
 	padding-top: 4rem;
 }
 

@@ -64,9 +64,6 @@ button, [type="button"], [type="reset"], [type="submit"], label, [type="text"], 
 textarea {
   overflow: auto; }
 
-:focus {
-  outline: 0; }
-
 ::-moz-focus-inner {
   padding: 0;
   border: 0; }
@@ -131,7 +128,7 @@ html {
 
 .block-area {
   color: #fff;
-  padding: 1rem 0; }
+  padding: 2rem 0; }
 
 .block-heading-container {
   font-family: Raleway, sans-serif;
@@ -144,7 +141,9 @@ html {
   margin-top: 2rem; }
 
 .about-area {
-  background: #40bfbf;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#00ffff), to(#60609f));
+  background-image: -webkit-linear-gradient(top left, #00ffff, #60609f);
+  background-image: linear-gradient(to bottom right, #00ffff, #60609f);
   padding-top: 4rem; }
 
 .projects-area {
@@ -202,10 +201,8 @@ html {
 
 .project-card {
   cursor: pointer;
-  color: #fff;
   line-height: 1;
   text-align: center;
-  border-radius: 0.33rem;
   overflow: hidden;
   max-width: 20rem; }
 
@@ -216,7 +213,6 @@ html {
   max-width: 100%; }
 
 .project-card-info {
-  background: gray;
   padding: 0.75rem 0 0.5rem;
   width: 100%; }
 
