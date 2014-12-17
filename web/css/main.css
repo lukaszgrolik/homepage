@@ -183,21 +183,13 @@ html {
 .social-icon:hover {
   color: #fff; }
 
-.project-list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
 .project-list-item {
-  margin: 0 1rem; }
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  text-align: center; }
+
+.project-container {
+  display: inline-block; }
 
 .project-card {
   cursor: pointer;

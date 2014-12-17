@@ -144,19 +144,21 @@ html
 
 .project-list
 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	// display: flex;
+	// flex-wrap: wrap;
+	// justify-content: center;
 }
 
 .project-list-item
 {
 	margin: 0 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
 }
 
 .project-container
 {
-
+	display: inline-block;
 }
 
 @import 'project-card';
