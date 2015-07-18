@@ -37,6 +37,15 @@
 	text-transform: uppercase;
 }
 
+.project-card-description-container
+{
+	color: rgba($color-grey-1, .75);
+	font-size: .9rem;
+	font-weight: 300;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
 .project-card-url-container
 {
 	// color: rgba(255, 255, 255, .75);

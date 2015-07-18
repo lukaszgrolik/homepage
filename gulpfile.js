@@ -5,14 +5,14 @@ gulp.task('connect', function() {
   gp.connect.server({
     root: 'web',
     port: 3030,
-    livereload: true
+    // livereload: true
   });
 });
 
-gulp.task('livereload', function() {
-  return gulp.src('web/**/*.{html,js}')
-  .pipe(gp.connect.reload());
-});
+// gulp.task('livereload', function() {
+//   return gulp.src('web/**/*.{html,js}')
+//   .pipe(gp.connect.reload());
+// });
 
 gulp.task('sass', function() {
   return gulp.src('src/sass/**/*.scss')
@@ -35,7 +35,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', function() {
   gulp.watch('src/sass/**/*.scss', ['sass']);
-  gulp.watch('web/**/*.{html,js}', ['livereload'])
+  // gulp.watch('web/**/*.{html,js}', ['livereload'])
 });
 
 gulp.task('build', ['sass']);
