@@ -1,0 +1,5 @@
+/*.sublime-*
+/node_modules
+/web/code
+/web/index.html
+/web/projects
