@@ -4,22 +4,16 @@ export default class Layout extends React.Component {
   render() {
     const menu = ['/', '/projects', '/code'];
 
-    return <html>
-      <head>
-        <title>Łukasz Grolik</title>
-      </head>
+    return <div>
+      <ul>
+        {
+          menu.map(item => {
+            return <li key={item}><a href={item}>{item}</a></li>
+          })
+        }
+      </ul>
 
-      <body>
-        <ul>
-          {
-            menu.map(item => {
-              return <li key={item}><a href={item}>{item}</a></li>
-            })
-          }
-        </ul>
-
-        {this.props.children}
-      </body>
-    </html>
+      <div>{this.props.children}</div>
+    </div>
   }
 };
