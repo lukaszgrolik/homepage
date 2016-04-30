@@ -1,0 +1,65 @@
+@import 'reset';
+
+// @keyframes pulsing-bg {
+//   0%, 100% {
+//     background-color: #3498db;
+//   }
+
+//   12% {
+//     background-color: #2ecc71;
+//   }
+
+//   25% {
+//     background-color: #1abc9c;
+//   }
+
+//   37% {
+//     background-color: #9b59b6;
+//   }
+
+//   50% {
+//     background-color: #34495e;
+//   }
+
+//   62% {
+//     background-color: #e67e22;
+//   }
+
+//   75% {
+//     background-color: #e74c3c;
+//   }
+
+//   87% {
+//     background-color: #7f8c8d;
+//   }
+// }
+
+html {
+  font-family: sans-serif;
+}
+
+.Header {
+  background: linear-gradient(#3498db, #2980b9);
+  background-clip: padding-box;
+  height: 500px;
+  // animation: pulsing-bg 60s infinite
+  border-bottom: 1em dashed #2980b9;
+}
+
+.Offer {
+  margin-top: 2em;
+
+  .Offer_contents {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+.Feats {
+  margin-top: 2em;
+
+  .Feats_contents {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
