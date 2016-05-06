@@ -1,19 +1,26 @@
 import React from 'react';
+import classNames from 'classnames';
 // import Layout from '../Layout';
 
 export default class HomePage extends React.Component {
   render() {
     const offer = [
       {
-        name: 'szybkie strony-wizytówki',
+        name: 'Szybkie i proste strony-wizytówki',
+        icon: 'bolt',
+        color: 'orange'
       },
       {
-        name: 'funkcjonalne serwisy z panelem administratora',
-        desc: 'z obsługą bloga czy strony produktu',
+        name: 'Funkcjonalne serwisy z panelem administratora',
+        desc: 'Z obsługą bloga czy strony produktu',
+        icon: 'users',
+        color: 'dodgerblue'
       },
       {
-        name: 'unikatowe aplikacje webowe',
-        desc: 'dostosowane do indywidualnych wymagań klienta',
+        name: 'Unikatowe aplikacje webowe',
+        desc: 'Dostosowane do indywidualnych wymagań klienta',
+        icon: 'diamond',
+        color: 'tomato'
       },
     ];
     const feats = [
@@ -27,40 +34,81 @@ export default class HomePage extends React.Component {
       },
     ];
     const projects = [
+      // {
+      //   name: 'Wizytówki - strony statyczne'
+      // },
+      // {
+      //   name: 'Serwisy',
+      // },
+      // {
+      //   name: 'Aplikacje webowe'
+      // },
+      // {
+      //   name: 'Inne'
+      // },
       {
-        name: 'Wizytówki - strony statyczne'
+        name: 'Duolingo Tree Progress Bookmarklet',
+        desc: 'A little more info about your language learning progress',
+        img: 'duolingo-tree-progress-bookmarklet-1.png',
+        url: 'http://lukaszgrolik.github.io/duolingo-tree-progress-bookmarklet'
       },
       {
-        name: 'Serwisy',
+        name: 'Food Calc',
+        desc: 'Calculate nutritional value and cost of your meals',
+        img: 'food-calc-1.png',
+        url: 'https://food-calc.meteor.com',
       },
       {
-        name: 'Aplikacje webowe'
+        name: 'Styleo Admin Theme',
+        desc: 'Free Bootstrap Admin Theme',
+        img: 'styleo-admin-theme-1.png',
+        url: 'http://lukaszgrolik.github.io/styleo-admin-theme'
       },
       {
-        name: 'Inne'
+        name: 'GitHub Repos Stats',
+        desc: 'Compare GitHub repositories',
+        img: 'github-repos-stats-1.png',
+        url: 'http://lukaszgrolik.github.io/repos-stats',
       },
     ];
 
     return <div>
       <div className="Header">
-
+        <img src="images/logo-white.png" alt="" className="Header_logo" />
       </div>
 
       <div className="Offer">
         <div className="Offer_contents">
-          <h2>Tworzenie stron internetowych</h2>
+          <h1 className="Offer_mainHeading">Łukasz Grolik</h1>
+          <h2 className="Offer_subHeading">Tworzenie stron internetowych</h2>
 
-          <ul>
+          <ul className="Offer_offerList">
             {
               offer.map(item => {
-                return <li key={item.name}>{item.name}</li>
+                return <li key={item.name}>
+                  <div className="Offer_offerBlock">
+                    <div className="Offer_offerBlockContent">
+                      <div className="Offer_offerBlockIconWrapper" style={{color: item.color}}>
+                        <span className={classNames(['fa', `fa-${item.icon}`])}></span>
+                      </div>
+
+                      <div>
+                        <span>{item.name}</span>
+                      </div>
+                    </div>
+
+                    <div className="Offer_offerBlockDescWrapper">
+                      <span>{item.desc}</span>
+                    </div>
+                  </div>
+                </li>
               })
             }
           </ul>
         </div>
       </div>
 
-      <div className="Feats">
+      {/*<div className="Feats">
         <div className="Feats_contents">
           <ul>
             {
@@ -70,14 +118,45 @@ export default class HomePage extends React.Component {
             }
           </ul>
         </div>
-      </div>
+      </div>*/}
 
       <div className="Portfolio">
-        <div>
-          <ul>
+        <div className="Portfolio_content">
+          <h2 className="Portfolio_heading">Portfolio</h2>
+          {/*<ul>
             {
               projects.map(project => {
                 return <li key={project.name}>{project.name}</li>
+              })
+            }
+          </ul>*/}
+          <ul className="Portfolio_projectsList">
+            {
+              projects.map(project => {
+                return <li key={project.img}>
+                  <div className="Portfolio_projectBlock">
+                    <div>
+                      <img src={`images/projects/${project.img}`} alt="" />
+                    </div>
+
+                    <div>
+                      <div className="Portfolio_projectBlockNameWrapper">
+                        <span>{project.name}</span>
+                      </div>
+
+                      <div className="Portfolio_projectBlockDescWrapper">
+                        <span>{project.desc}</span>
+                      </div>
+
+                      {
+                        project.url &&
+                        <div className="Portfolio_projectBlockUrlWrapper">
+                          <a href={project.url}>{project.url.replace(/https?:\/\//, '')}</a>
+                        </div>
+                      }
+                    </div>
+                  </div>
+                </li>
               })
             }
           </ul>
