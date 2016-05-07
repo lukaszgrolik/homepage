@@ -148,11 +148,11 @@ export default class HomePage extends React.Component {
         </div>
       </div>*/}
 
-      <div className="Contact">
-        <div className="Contact_contents">
-          <h2 className="Contact_heading">Kontakt</h2>
+      <div className="Feats">
+        <div className="Feats_contents">
+          <h2 className="Feats_heading">Kontakt</h2>
 
-          <p className="Contact_text">Pisz na <span className="Contact_emailText">lukasz@grolik.pl</span></p>
+          <p className="Feats_text">Pisz na <span className="Contact_emailText">lukasz@grolik.pl</span></p>
         </div>
       </div>
 
@@ -196,6 +196,48 @@ export default class HomePage extends React.Component {
               })
             }
           </ul>
+        </div>
+      </div>
+
+      <div className="Contact">
+        <div className="Contact_squaresContainer">
+          <ul className="Contact_squaresList">
+            {
+              _.times((200), i => {
+                return <li key={i}>
+                  <div className="Contact_square"></div>
+                </li>
+              })
+            }
+          </ul>
+        </div>
+
+        <div className="Contact_content">
+          {/*<h2 className="Contact_heading">Kontakt</h2>*/}
+
+          <div className="Contact_contactsList">
+            <div className="Contact_contactBlock">
+              <div className="Contact_iconWrapper">
+                <span className="fa fa-envelope-o"></span>
+              </div>
+
+              <div>
+                <p className="Contact_text">W razie chęci współpracy pisz na <span className="Contact_emailText"><a href="mailto:lukasz@grolik.pl">lukasz@grolik.pl</a></span></p>
+              </div>
+            </div>
+
+            <div className="Contact_contactBlock">
+              <div className="Contact_iconWrapper">
+                <span className="fa fa-github"></span>
+              </div>
+
+              <div>
+                <p className="Contact_text">
+                  <a href="https://github.com/lukaszgrolik" target="_blank">github.com/lukaszgrolik</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

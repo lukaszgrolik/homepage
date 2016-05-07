@@ -97,13 +97,15 @@ html {
 
   .Offer_mainHeading {
     color: rgba(#000, .75);
-    font-size: 2.5em;
+    font-size: 3em;
+    font-weight: 300;
     // text-transform: uppercase;
   }
 
   .Offer_subHeading {
     color: rgba(#000, .6);
-    font-size: 1.75em;
+    font-size: 2em;
+    font-weight: 300;
     // text-transform: uppercase;
     margin-top: .5em;
   }
@@ -143,16 +145,16 @@ html {
   }
 }
 
+// .Feats {
+//   margin-top: 2em;
+
+//   .Feats_contents {
+//     max-width: 720px;
+//     margin: 0 auto;
+//   }
+// }
+
 .Feats {
-  margin-top: 2em;
-
-  .Feats_contents {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-}
-
-.Contact {
   $bg: #eee;
 
   background-color: $bg;
@@ -185,24 +187,25 @@ html {
     bottom: -$size / 2;
   }
 
-  .Contact_content {
+  .Feats_content {
     max-width: 720px;
     margin: 0 auto;
   }
 
-  .Contact_heading {
+  .Feats_heading {
     color: rgba(#000, .6);
     font-size: 2em;
+    font-weight: 300;
     text-align: center;
     margin-bottom: 1em;
   }
 
-  .Contact_text {
+  .Feats_text {
     color: rgba(#000, .6);
     font-size: 1.25em;
   }
 
-  .Contact_emailText {
+  .Feats_emailText {
     font-weight: 600;
   }
 }
@@ -215,7 +218,8 @@ html {
 
   .Portfolio_heading {
     color: rgba(#000, .75);
-    font-size: 2em;
+    font-size: 2.5em;
+    font-weight: 300;
     text-align: center;
     padding: 3em 1em 1em;
     border-bottom: 1px dashed #ddd;
@@ -278,7 +282,6 @@ html {
   .Portfolio_projectBlockUrlWrapper {
     color: rgba(#000, .4);
     font-size: .8em;
-    font-weight: 300;
     margin-top: 1.5em;
 
     a {
@@ -290,5 +293,88 @@ html {
 
   .Portfolio_projectBlockUrl {
 
+  }
+}
+
+.Contact {
+  $bg: #999;
+
+  background-color: $bg;
+  background: linear-gradient($bg, #777);
+  margin-top: 4em;
+
+  .Contact_squaresContainer {
+    overflow: hidden;
+  }
+
+  .Contact_squaresList {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Contact_square {
+    $size: .75em;
+
+    background-color: $bg;
+    width: 0;
+    height: 0;
+    border-left: $size solid #fff;
+    border-right: $size solid #fff;
+    border-bottom: $size solid $bg;
+  }
+
+  .Contact_content {
+    padding: 3em 2em 5em;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .Contact_heading {
+    color: rgba(#fff, .6);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .Contact_contactsList {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    > * + * {
+      margin-left: 2em;
+    }
+  }
+
+  .Contact_contactBlock {
+    display: flex;
+    align-items: center;
+    max-width: 23em;
+
+    > * + * {
+      margin-left: 1em;
+    }
+  }
+
+  .Contact_iconWrapper {
+    color: rgba(#fff, .75);
+    font-size: 5em;
+  }
+
+  .Contact_text {
+    color: rgba(#fff, .75);
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.2;
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .Contact_emailText {
+    font-weight: 400;
   }
 }
