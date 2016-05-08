@@ -38,6 +38,34 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+.TopPanel {
+  // background-color: rgba(dodgerblue, .75);
+  background-color: rgba(dodgerblue, .8);
+  // background: radial-gradient(circle, rgba(dodgerblue, .8), transparent);
+  // background: radial-gradient(circle, dodgerblue, transparent);
+  color: #fff;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .TopPanel_menu {
+    display: flex;
+    justify-content: center;
+
+    a {
+      padding: .75em 1em;
+      display: block;
+      transition: background-color .2s;
+
+      &:hover {
+        background-color: rgba(#fff, .2);
+      }
+    }
+  }
+}
+
 .Header {
   // background: linear-gradient(#3498db, #2980b9);
   // background-clip: padding-box;
@@ -87,7 +115,7 @@ html {
 }
 
 .Offer {
-  padding: 5em 3em 4em;
+  padding: 7em 3em 4em;
 
   .Offer_content {
     text-align: center;
@@ -99,7 +127,7 @@ html {
     color: rgba(#000, .75);
     font-size: 3em;
     font-weight: 300;
-    // text-transform: uppercase;
+    text-transform: uppercase;
   }
 
   .Offer_subHeading {
@@ -157,10 +185,13 @@ html {
 .Feats {
   $bg: #eee;
 
-  background-color: $bg;
-  background: radial-gradient(circle, $bg, transparent);
-  padding: 4em 3em 3em;
+  background-color: rgba($bg, .7);
+  padding: 5em 3em 3em;
   position: relative;
+
+  @media (min-width: 1280px) {
+    background: radial-gradient(circle, $bg, transparent);
+  }
 
   $size: 2em;
 
@@ -329,10 +360,10 @@ html {
 }
 
 .Contact {
-  $bg: #999;
+  $bg: lightslategrey;
 
   background-color: $bg;
-  background: linear-gradient($bg, #777);
+  background: linear-gradient($bg, lightslategrey);
   margin-top: 4em;
 
   .Contact_squaresContainer {
@@ -356,7 +387,7 @@ html {
   }
 
   .Contact_content {
-    padding: 3em 2em 5em;
+    padding: 3em 2em 4em;
     max-width: 960px;
     margin: 0 auto;
   }
@@ -387,25 +418,26 @@ html {
   }
 
   .Contact_contactBlock {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    text-align: center;
     max-width: 23em;
 
     > * + * {
-      margin-left: 1em;
+      margin-top: 1em;
     }
   }
 
   .Contact_iconWrapper {
-    color: rgba(#fff, .6);
+    color: rgba(#fff, .9);
     font-size: 5em;
   }
 
   .Contact_text {
-    color: rgba(#fff, .75);
-    font-size: 1.25em;
+    color: rgba(#fff, .9);
+    font-size: 1.2em;
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 1.4;
 
     a {
       &:hover {

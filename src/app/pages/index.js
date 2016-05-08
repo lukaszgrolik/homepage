@@ -5,6 +5,20 @@ import classNames from 'classnames';
 
 export default class HomePage extends React.Component {
   render() {
+    const menu = [
+      {
+        name: '/',
+        label: 'Oferta',
+      },
+      {
+        name: '#portfolio',
+        label: 'Portfolio',
+      },
+      {
+        name: '#kontakt',
+        label: 'Kontakt',
+      },
+    ];
     const offer = [
       {
         name: 'Szybkie i proste strony-wizytówki',
@@ -46,13 +60,13 @@ export default class HomePage extends React.Component {
       },
       {
         name: 'Płynny interfejs i wydajna technologia serwerowa',
-        desc: 'Szybkość działania zapewniona dzięki React i NodeJS',
+        desc: 'React i Node.js zapewniają szybkie działanie strony',
         icon: 'dashboard',
         color: '',
       },
       {
         name: 'Zwinny development',
-        desc: 'Nowości i aktualizacje strony są implementowane w najkrótszym możliwym czasie dzięki wykorzystaniu najnowszych technologii webowych i deweloperskich',
+        desc: 'Strona tworzona jest w krótkim czasie dzięki wykorzystaniu nowoczesnych technologii webowych i deweloperskich',
         icon: 'code',
         color: '',
       },
@@ -114,6 +128,18 @@ export default class HomePage extends React.Component {
           </ul>
         </div>
       </div>*/}
+
+      <div className="TopPanel">
+        <ul className="TopPanel_menu">
+          {
+            menu.map(item => {
+              return <li key={item.name}>
+                <a href={item.name}>{item.label}</a>
+              </li>
+            })
+          }
+        </ul>
+      </div>
 
       <div className="Offer">
         <div className="Offer_content">
@@ -182,7 +208,7 @@ export default class HomePage extends React.Component {
         </div>
       </div>
 
-      <div className="Portfolio">
+      <div className="Portfolio" id="portfolio">
         <div className="Portfolio_content">
           <h2 className="Portfolio_heading">Portfolio</h2>
           {/*<ul>
@@ -225,7 +251,7 @@ export default class HomePage extends React.Component {
         </div>
       </div>
 
-      <div className="Contact">
+      <div className="Contact" id="kontakt">
         <div className="Contact_squaresContainer">
           <ul className="Contact_squaresList">
             {
