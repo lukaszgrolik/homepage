@@ -87,9 +87,9 @@ html {
 }
 
 .Offer {
-  margin-top: 5em;
+  padding: 5em 3em 4em;
 
-  .Offer_contents {
+  .Offer_content {
     text-align: center;
     max-width: 720px;
     margin: 0 auto;
@@ -148,7 +148,7 @@ html {
 // .Feats {
 //   margin-top: 2em;
 
-//   .Feats_contents {
+//   .Feats_content {
 //     max-width: 720px;
 //     margin: 0 auto;
 //   }
@@ -159,9 +159,7 @@ html {
 
   background-color: $bg;
   background: radial-gradient(circle, $bg, transparent);
-  text-align: center;
   padding: 4em 3em 3em;
-  margin-top: 4em;
   position: relative;
 
   $size: 2em;
@@ -188,25 +186,52 @@ html {
   }
 
   .Feats_content {
-    max-width: 720px;
+    max-width: 1280px;
     margin: 0 auto;
   }
 
-  .Feats_heading {
-    color: rgba(#000, .6);
-    font-size: 2em;
-    font-weight: 300;
+  .Feats_featsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    $distance: 1em;
+
+    margin-left: -$distance;
+    margin-top: -$distance;
+
+    > * {
+      margin-left: $distance;
+      margin-top: $distance;
+    }
+  }
+
+  .Feats_featBlock {
     text-align: center;
-    margin-bottom: 1em;
+    max-width: 15em;
   }
 
-  .Feats_text {
-    color: rgba(#000, .6);
-    font-size: 1.25em;
+  .Feats_featBlockIconWrapper {
+    color: rgba(#000, .75);
+    font-size: 2em;
   }
 
-  .Feats_emailText {
+  .Feats_featBlockNameWrapper {
+    color: rgba(#000, .75);
     font-weight: 600;
+    line-height: 1.2;
+    min-height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  .Feats_featBlockDescWrapper {
+    color: rgba(#000, .6);
+    font-size: .9em;
+    line-height: 1.3;
+    margin-top: .5em;
   }
 }
 
@@ -217,7 +242,7 @@ html {
   }
 
   .Portfolio_heading {
-    color: rgba(#000, .75);
+    color: rgba(#000, .7);
     font-size: 2.5em;
     font-weight: 300;
     text-align: center;
@@ -247,15 +272,18 @@ html {
   }
 
   .Portfolio_projectBlock {
-    display: flex;
-    align-items: center;
+    @media (min-width: 640px) {
+      display: flex;
+      align-items: center;
 
-    > * + * {
-      margin-left: 1em;
+      > * + * {
+        margin-left: 1em;
+      }
     }
 
     img {
       // max-width: 13em;
+      max-width: 100%;
       max-height: 10em;
     }
 
@@ -270,6 +298,10 @@ html {
     color: rgba(#000, .6);
     font-weight: 600;
     // text-transform: uppercase;
+
+    @media (max-width: 639px) {
+      margin-top: 1em;
+    }
   }
 
   .Portfolio_projectBlockDescWrapper {
@@ -338,11 +370,19 @@ html {
 
   .Contact_contactsList {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
 
-    > * + * {
-      margin-left: 2em;
+    $distance-v: 2em;
+    $distance-h: 1em;
+
+    margin-left: -$distance-v;
+    margin-top: -$distance-h;
+
+    > * {
+      margin-left: $distance-v;
+      margin-top: $distance-h;
     }
   }
 
@@ -357,7 +397,7 @@ html {
   }
 
   .Contact_iconWrapper {
-    color: rgba(#fff, .75);
+    color: rgba(#fff, .6);
     font-size: 5em;
   }
 

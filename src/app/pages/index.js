@@ -29,22 +29,32 @@ export default class HomePage extends React.Component {
       {
         name: 'Responsive Web Design',
         desc: 'Strona jest estetyczna i funkcjonalna zarówno na ekranie monitora, jak i na tablecie czy smartfonie',
+        icon: 'mobile',
+        color: '',
       },
       {
-        name: 'SEO',
+        name: 'SEO - optymalizacja dla wyszukiwarek',
         desc: 'Strona dobrze współpracuje z wyszukiwarkami internetowymi',
+        icon: 'cogs',
+        color: '',
       },
       {
         name: 'Estetyczny design i przyjazny UX',
-        desc: '',
+        desc: 'Strona jest przyjemna dla oka i intuicyjna w użytkowaniu',
+        icon: 'child',
+        color: '',
       },
       {
         name: 'Płynny interfejs i wydajna technologia serwerowa',
-        desc: 'React i NodeJS',
+        desc: 'Szybkość działania zapewniona dzięki React i NodeJS',
+        icon: 'dashboard',
+        color: '',
       },
       {
         name: 'Zwinny development',
-        desc: '',
+        desc: 'Nowości i aktualizacje strony są implementowane w najkrótszym możliwym czasie dzięki wykorzystaniu najnowszych technologii webowych i deweloperskich',
+        icon: 'code',
+        color: '',
       },
     ];
     const projects = [
@@ -106,7 +116,7 @@ export default class HomePage extends React.Component {
       </div>*/}
 
       <div className="Offer">
-        <div className="Offer_contents">
+        <div className="Offer_content">
           <h1 className="Offer_mainHeading">Łukasz Grolik</h1>
           <h2 className="Offer_subHeading">Tworzenie stron internetowych</h2>
 
@@ -137,7 +147,7 @@ export default class HomePage extends React.Component {
       </div>
 
       {/*<div className="Feats">
-        <div className="Feats_contents">
+        <div className="Feats_content">
           <ul>
             {
               feats.map(feat => {
@@ -149,10 +159,26 @@ export default class HomePage extends React.Component {
       </div>*/}
 
       <div className="Feats">
-        <div className="Feats_contents">
-          <h2 className="Feats_heading">Kontakt</h2>
+        <div className="Feats_content">
+          {/*<h2 className="Feats_heading">Kontakt</h2>*/}
 
-          <p className="Feats_text">Pisz na <span className="Contact_emailText">lukasz@grolik.pl</span></p>
+          <ul className="Feats_featsList">
+            {
+              feats.map(feat => {
+                return <li key={feat.name}>
+                  <div className="Feats_featBlock">
+                    <div className="Feats_featBlockIconWrapper" style={{color: feat.color}}>
+                      <span className={classNames(['fa', `fa-${feat.icon}`])}></span>
+                    </div>
+
+                    <div className="Feats_featBlockNameWrapper">{feat.name}</div>
+
+                    <div className="Feats_featBlockDescWrapper">{feat.desc}</div>
+                  </div>
+                </li>
+              })
+            }
+          </ul>
         </div>
       </div>
 
