@@ -1,12 +1,13 @@
 {
   "scripts": {
     "build-script": "./node_modules/.bin/webpack --color",
-    "build-prod-script": "./node_modules/.bin/webpack --color --optimize-minimize",
-    "server": "./node_modules/.bin/webpack-dev-server --content-base web/ --color --watch --port 8090",
+    "build-prod-script": "./node_modules/.bin/webpack --config webpack.config.prod.js --color --optimize-minimize",
+    "server": "./node_modules/.bin/webpack-dev-server --content-base web/ --color --watch --port 8090 --host 0.0.0.0",
     "restapage": "./node_modules/.bin/babel-node restapage.js --color",
     "watch-style": "gulp --color"
   },
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "babel-cli": "^6.7.7",
     "babel-loader": "^6.2.4",
     "babel-plugin-add-module-exports": "^0.1.2",
@@ -15,6 +16,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
+    "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.1",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"

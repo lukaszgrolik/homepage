@@ -1,7 +1,5 @@
 /*.sublime-*
 /node_modules
-/web/code
 /web/index.html
-/web/projects
 /web/script.js
 /web/style.css
