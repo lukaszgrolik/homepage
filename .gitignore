@@ -1,5 +1,5 @@
-/*.sublime-*
-/node_modules
-/web/index.html
-/web/script.js
-/web/style.css
+*.sublime-*
+node_modules/
+web/index.html
+web/script.js
+web/style.css
